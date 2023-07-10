@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_slow"
+        android:title="Медленно" />
+    <item
+        android:id="@+id/menu_normal"
+        android:title="Нормально" />
+    <item
+        android:id="@+id/menu_fast"
+        android:title="Быстро" />
+</menu>

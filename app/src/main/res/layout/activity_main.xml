@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="260dp"
+        android:layout_height="115dp"
+        android:layout_marginLeft="500px"
+        android:text="НАЧАЛО" />
+
+    <Button
+        android:id="@+id/frequencyButton"
+        android:layout_width="260dp"
+        android:layout_height="115dp"
+        android:layout_below="@id/startButton"
+        android:layout_marginLeft="500px"
+        android:layout_marginTop="58dp"
+        android:text="ЧАСТОТА" />
+
+    <Button
+        android:id="@+id/imagesButton"
+        android:layout_width="260dp"
+        android:layout_height="115dp"
+        android:layout_below="@id/frequencyButton"
+        android:layout_marginLeft="500px"
+        android:layout_marginTop="60dp"
+        android:text="ИЗОБРАЖЕНИЯ" />
+
+</RelativeLayout>
