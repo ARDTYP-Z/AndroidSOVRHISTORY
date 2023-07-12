@@ -1,10 +1,12 @@
 package com.practicum.showandroid;
 
+import android.content.pm.ActivityInfo;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.WindowManager;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
@@ -32,6 +34,13 @@ public class SlideshowActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_slideshow);
+
+        // Блокировка альбомного режима
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+
+        // Разрешение только книжного режима
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FORCE_NOT_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FORCE_NOT_FULLSCREEN);
 
         viewPager = findViewById(R.id.viewPager);
         viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
